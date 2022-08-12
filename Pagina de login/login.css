@@ -15,5 +15,64 @@ body {
 .left-login{
     width: 50vw;
     height: 100vh;
-    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.titulo {
+    color: white;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #11468F;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000;
+}
+
+
+.card-login > h1 {
+    color: #EEEEEE;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-filed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.text-filed > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 12pt;
+    box-shadow: 0px 10px 30px #000000;
+    box-sizing: border-box;
+    margin: 15px 15px;
+}
+
+
+
+
+
+
