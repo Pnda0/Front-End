@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.main-login{
+    /* VW corresponde a: Viewport width e Vh a: Viewport height. E Viewport a:Porcentagem de pixel da tela. EX: se sua tela tem 1000px 1 vh corresponde a 1%, logo 1vh = 10px */ 
+    width: 100vw;
+    height: 100vh;
+    background-color: #041562;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    
+}
