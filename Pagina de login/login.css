@@ -96,6 +96,28 @@ body {
   font-family: Quicksand, sans-serif;
 }
 
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .conteiner{
+        flex-direction: column;
+    }
+    .conteiner-1{
+        width: 100%;
+        height: auto;
+    }
+    .conteiner-2{
+        width: 100%;
+        height: auto;
+    }
+    .imagem {
+        width: 50vw;
+    }
+}
 
 
 
