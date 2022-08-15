@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+
 /* main login */
 .conteiner{
     /* VW corresponde a: Viewport width e Vh a: Viewport height. E Viewport a:Porcentagem de pixel da tela. EX: se sua tela tem 1000px 1 vh corresponde a 1%, logo 1vh = 10px */ 
@@ -11,7 +12,6 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    
 }
 /* left-login */
 .conteiner-1 {
@@ -38,7 +38,7 @@ body {
 
 /* card login */
 .card-login {
-    width: 60%;
+    width: 400px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -51,8 +51,9 @@ body {
 }
 
 .imagem {
-   margin: 20px;
-   padding-left: 25px;
+   align-items: center;
+   padding-bottom: 20px;
+
 }
 
 .imagem-1 {
@@ -96,6 +97,12 @@ body {
   font-family: Quicksand, sans-serif;
 }
 
+.rodape{
+    color: white;
+    font-family: Quicksand, sans-serif;
+    font-weight: 800;
+    font-size: 12pt;
+}
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;
