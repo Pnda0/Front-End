@@ -1,5 +1,6 @@
 body {
     margin: 0;
+
 }
 
 
@@ -8,7 +9,7 @@ body {
     /* VW corresponde a: Viewport width e Vh a: Viewport height. E Viewport a:Porcentagem de pixel da tela. EX: se sua tela tem 1000px 1 vh corresponde a 1%, logo 1vh = 10px */ 
     width: 100vw;
     height: 100vh;
-    background-color: #1073B3;
+    background-image: url("Imagens/foto2.png");
     display:flex;
     justify-content: center;
     align-items: center;
@@ -100,9 +101,9 @@ body {
 .rodape{
     color: white;
     font-family: Quicksand, sans-serif;
-    font-weight: 800;
-    font-size: 12pt;
+    font-size: 8pt;
 }
+
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;
