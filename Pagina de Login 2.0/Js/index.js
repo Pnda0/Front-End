@@ -4,7 +4,7 @@ function logar(){
 
     if(login == 'admin' && senha =='admin'){
         alert('Sucesso');
-        location.href = 'Html/home.html';
+        location.href = "home.html";
     }
         
     else{
