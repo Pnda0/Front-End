@@ -121,8 +121,7 @@ body {
 }
 
 .footer{
-    color: #fff;
-    flex-direction: column;
+    background-color: #0C3C78;
 }
 
 /* Otimização para outros dispositivos */
