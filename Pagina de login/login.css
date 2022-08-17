@@ -18,8 +18,11 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+   
 }
-/* left-login */
+
+
+
 
 
 /* left-login */
@@ -94,7 +97,7 @@ body {
     background-color:var(--cor-terciaria);
     outline:none;
     color: black;
-
+    text-decoration: none;
     text-transform: uppercase;
     font-family: var(--fonte-apple);
     font-weight: bold;
@@ -105,13 +108,9 @@ body {
 }
 
 .botao-1:hover{
-    background-color: var(--cor-primaria);
+    background-color: #d2386c;
+    color: #fff;
 }
-
-
-
-
-
 
 
 
@@ -121,6 +120,10 @@ body {
     font-size: 8pt;
 }
 
+.footer{
+    color: #fff;
+    flex-direction: column;
+}
 
 /* Otimização para outros dispositivos */
 @media only screen and (max-width: 950px){
