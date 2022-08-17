@@ -100,7 +100,7 @@ body {
     font-weight: bold;
     font-size: 12pt;
     letter-spacing: 2px;
-
+    margin: 10px;
     cursor: pointer;
 }
 
