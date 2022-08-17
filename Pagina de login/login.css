@@ -1,8 +1,13 @@
 body {
     margin: 0;
-
 }
 
+:root{
+    --cor-primaria: #F50057;
+    --cor-secundaria: #0C3C78;
+    --cor-terciaria: #fff;
+    --fonte-apple: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
 
 /* main login */
 .conteiner{
@@ -76,45 +81,39 @@ body {
 }
 
 .btn {
-    text-align: center;
-    width: 50px;
-}
-
-.efeito {
     border: none;
-    color: #000;
-    padding: 20px;
-    margin: 10px;
-    font-size: 12px;
-    line-height: 12px;
-    border-radius: 10px;
-    position: relative;
+    text-align: center;
     box-sizing: border-box;
-    cursor: pointer;
-    transition: all 400ms ease;
-    font-weight: bold;
-    font-family: Quicksand, sans-serif;
-}
-
-.efeito-1{
-    background-color: red;
-}
-
-.efeito-1:before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0px;
-    height: 64px;
-    background: black;
-    border-radius: 10px;
-    transition: all 2s ease;
-}
-s
-.efeito-1:hover:before{
     width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color .5s;
 }
+
+.botao-1{
+    background-color:var(--cor-terciaria);
+    outline:none;
+    color: black;
+
+    text-transform: uppercase;
+    font-family: var(--fonte-apple);
+    font-weight: bold;
+    font-size: 12pt;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+.botao-1:hover{
+    background-color: var(--cor-primaria);
+}
+
+
+
+
+
+
+
 
 .rodape{
     color: white;
@@ -123,7 +122,7 @@ s
 }
 
 
-
+/* Otimização para outros dispositivos */
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;
