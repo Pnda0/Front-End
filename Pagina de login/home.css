@@ -1,4 +1,11 @@
 /*Resete Style */
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 *{
     margin: 0;
@@ -32,6 +39,8 @@ body {
     display: inline;
 }
 
+
+
 #menu ul li a{
     color: var(--cor-secundaria);
     padding: 20px;
@@ -42,9 +51,12 @@ body {
     transition: background .5s;
 }
 
+
 #menu ul li a:hover{
-    background-color: #1073B3;
+    background-color: #0C3C78;
+    color: #fff;
 }
+
 
 
 
