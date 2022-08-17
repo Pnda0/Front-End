@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #041562;
+}
+
+.title{  
+  margin: 5%;
+
+  font-family: 'Arial';
+  font-weight: 300;
+
+  color: white;
+  letter-spacing: .04em;
+}
+
+.container{
+  width: 700px;
+  height: auto;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  margin: 5%;
+}
+
+.button{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: black;
+    background-color:  white;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #1073B3;
+    font-family: Quicksand, sans-serif;
+}
+
+.button::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  background: #DA1212;
+
+  transition: all .9s;
+  z-index: -1;
+}
+/*========================*/
+
+/* First item - Button 1*/
+.item1::before{
+  width: 0;
+  height: 100%;
+
+  top: 0%;
+  left: 0%;
+}
+
+.item1:hover::before{
+  width: 100%;
+}
+/*========================*/
+
+/* First item - Button 2*/
+.item2::before{
+  width: 0;
+  height: 100%;
+
+  bottom: 0;
+  right: 0;
+}
+
+.item2::before{
+  width: 0;
+  height: 100%;
+
+  top: 0;
+  right: 0;
+}
+
+.item2:hover::before{
+    width: 100%;
+}
+
+.item3::before{
+    width: 100%;
+    height: 0;
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+.item3:hover::before{
+    height: 375%;
+  }
+
+
+.item4::before{
+    width: 100%;
+    height: 100%;
+  
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+  }
+
+.item4:hover::before{
+    transform: scaleX(1);
+    transform-origin: left ;
+  }
+
+.item5::before{
+    width: 100%;
+    height: 100%;
+  
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+  }
+
+.item5:hover::before{
+    transform: scaleX(1);
+    transform-origin: right ;
+  }
+
+.item6::before{
+    width: 100%;
+    height: 100%;
+  
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 250ms ease-in;
+  }
+
+.item6:hover::before{
+    transform: scaleY(1);
+    transform-origin: top ;
+  }
+
+.button-inter{
+    display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  padding: 12px 0;
+
+  font-family: 'Inter';
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+
+  color: #F6F6F6;
+  border: 1px solid #EEEEEE;
+  text-decoration: none;
+  
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item7:hover{
+    background: #DA1212 url(/Botões/photo.jpeg);
+    background-size: 100%;
+    transition-delay: .8s;
+    animation: animate1 .8s steps(8) fow;
+}
+
+
