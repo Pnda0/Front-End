@@ -7,7 +7,7 @@
 }
 
 body{
-  background: #041562;
+  background: black;
 }
 
 .title{  
@@ -45,7 +45,8 @@ body{
    font-weight: 300;
 
    color: #EEEEEE;
-   border: 1px solid black;
+   border: 1px solid #8a2be2;
+   border-radius: 15px;
    overflow: hidden;
    cursor: pointer;
 }
@@ -57,7 +58,7 @@ body{
 
   position: absolute;
 
-  background: #DA1212;
+  background: #8a2be2;
 
   transition: all .9s;
   z-index: -1;
@@ -162,7 +163,7 @@ body{
   }
 
 .button-inter{
-    display: flex;
+  display: flex;
   justify-content: center;
 
   position: relative;
@@ -175,7 +176,8 @@ body{
   font-weight: 300;
 
   color: #F6F6F6;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #8a2be2;
+ 
   text-decoration: none;
   
   overflow: hidden;
@@ -185,8 +187,146 @@ body{
 .item7:hover{
     background: #DA1212 url(/Botões/photo.jpeg);
     background-size: 100%;
-    transition-delay: .8s;
-    animation: animate1 .8s steps(8) fow;
+    transition-delay: .1s;
+    animation: animate1 .6s steps(4) forwards;
+    color: black;
 }
+
+@keyframes animate1{
+  0%{
+    background-position-y: 0;
+  }
+  100%{
+    background-position-y: -480px ;
+  }
+}
+
+.item8 span{
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+
+.item8::before{
+  content: "";
+  width: calc(100% + 2px);
+  height: calc(100% - 12px);
+
+  position: absolute;
+  top: 6px;
+  left: -1px;
+
+  background: #DA1212;
+  transition: .5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.item8:hover::before{
+  transform: scaleY(0);
+}
+
+.item8::after{
+  content: "";
+
+  width: calc(100% - 12px);
+  height: calc(100% + 4px);
+
+  position: absolute;
+  top: -2px;
+  left: 6px;
+
+  background: #DA1212;
+  transition: .5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.item8:hover::after{
+  transform: scaleX(0);
+}
+
+/*============== BOTÃO 9 ============== */
+
+.item9{
+  position: relative;
+  overflow:hidden;
+  transition: .2s;
+  color: #fff;
+}
+
+.item9:hover{
+  background: #8a2be2;
+  box-shadow: 0 0 15px #8a2be2, 0 0 15px #5b2be2, 0 0 15px #730bec;
+
+  transition-delay: .1s;
+}
+
+.item9 span{
+  position: absolute;
+  display: block;
+}
+
+.item9 span:nth-child(1){
+  width: 100%;
+  height: 2px;
+
+  top:0;
+  left: -100%;
+
+  background: linear-gradient(90deg, transparent, #31087B);
+}
+
+.item9:hover span:nth-child(1){
+  left: 100%;
+  transition: 2s;
+}
+
+.item9 span:nth-child(2){
+  width: 2px;
+  height: 100%;
+
+  top: -100%;
+  right: 0;
+
+  background: linear-gradient(90deg, transparent, #31087B);
+}
+
+.item9:hover span:nth-child(2){
+  top:100%;
+  transition: 1s;
+  transition-delay: .25s;
+}
+
+.item9 span:nth-child(3){
+  width: 100%;
+  height: 2px;
+
+  right: -100%;
+  bottom: 0;
+
+  background: linear-gradient(90deg, transparent, #31087B);
+}
+
+.item9:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+.item9 span:nth-child(4){
+  width: 2px;
+  height: 100%;
+
+  bottom: -100%;
+  left: 0;
+
+  background: linear-gradient(90deg, transparent, #31087B);
+}
+
+.item9:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: .8s;
+}
+
 
 
