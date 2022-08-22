@@ -2,17 +2,12 @@
     margin:0;
 }
 
+
 .container{
     max-width: 800px;
     border: 1px solid black;
-    
     display: flex;
 }
-
-.center{
-    align-items: center;
-}
-
 
 .item{
     background-color: black ;
@@ -21,6 +16,40 @@
     text-align: center;
     flex:1;
 }
+
+.center{
+    align-items: center;
+    
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.start{
+    align-items: flex-start;
+}
+
+.end{
+    align-items: flex-end;
+}
+.baseline{
+    align-items: baseline;
+    
+}
+
+
+.column{
+    flex-direction: column;
+}
+
+.central .item{
+    padding: 20px;
+    flex: 0;
+}
+
+
+
 
 
 
