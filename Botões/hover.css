@@ -7,7 +7,7 @@
 }
 
 body{
-  background: black;
+  background: gray;
 }
 
 .title{  
@@ -58,7 +58,7 @@ body{
 
   position: absolute;
 
-  background: #8a2be2;
+  background: green;
 
   transition: all .9s;
   z-index: -1;
