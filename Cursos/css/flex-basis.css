@@ -1,3 +1,56 @@
 *{
     margin:0;
 }
+
+.container{
+    max-width: 500px;
+
+    border: 1px solid black;
+
+    display: flex;
+}
+
+.items{
+    background-color: blue;
+    color: white;
+    
+    text-align: center;
+    
+
+    margin: 5px;
+}
+
+/* Item 1 */
+.bauto{
+    flex-basis: auto;
+}
+
+.fg-1{
+    flex-grow: 1;
+}
+
+/* Basis 0 */
+
+.b-0{
+    flex-basis: 0;
+}
+
+.fg-0{
+    flex-grow: 0;
+}
+.fg-1{
+    flex-grow: 1;
+}
+
+.fg-2{
+    flex-grow: 2;
+}
+/* Basis + Width */
+
+.basis{
+    flex-basis: 300px;
+}
+
+.w100{
+    flex-basis: 100px;
+}
