@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+.container{
+    height: 400px;
+    max-width: 300px;
+
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 1px solid black;
+}
+
+.item{
+    background-color: orange;
+    color: white;
+
+    padding: 0;
+    flex: 1;
+    margin: 5px;
+
+    text-align: center;
+}
+
+.center{
+    align-content: center;
+}
+
+.flex-start{
+    align-content: flex-start;
+}
+
+.flex-end{
+    align-content: flex-end;
+}
+
+.space-around{
+    align-content: space-around;
+}
+
+.space-between{
+    align-content: space-between;
+}

@@ -16,7 +16,7 @@ body {
     /* VW corresponde a: Viewport width e Vh a: Viewport height. E Viewport a:Porcentagem de pixel da tela. EX: se sua tela tem 1000px 1 vh corresponde a 1%, logo 1vh = 10px */ 
     width: 100vw;
     height: 96vh;
-    background: linear-gradient(45deg, var(--gradient-estilo02)) ;
+    background: linear-gradient(45deg, var(--gradient-estilo01)) ;
     animation: colors 15s ease infinite;
     background-size: 300% 300%;
     display:flex;

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    max-width: 300px;
+
+    border: 2px solid black;
+    
+}
+
+.item{
+    background-color:orangered;
+
+    margin: 5px;
+    padding: 10px;
+
+    text-align: center;
+    color: black;
+}
+
+.jj{
+    flex-grow: 0;
+}
+
+.jj-1{
+    flex-grow: 1;
+}
+
+.jj-2{
+    flex-grow: 2;
+}
+
+.jj-3{
+    flex-grow: 3;
+}
+
+.jj-4{
+    flex-grow: 4;
+}
+

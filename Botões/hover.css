@@ -23,11 +23,12 @@ body{
 .container{
   width: 700px;
   height: auto;
+
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  
+
   margin: 5%;
 }
 
@@ -136,8 +137,10 @@ body{
   
     top: 0;
     left: 0;
+
     transform: scaleX(0);
     transform-origin: left;
+
     transition: transform 250ms ease-in;
   }
 
@@ -152,6 +155,7 @@ body{
   
     top: 0;
     left: 0;
+
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 250ms ease-in;
