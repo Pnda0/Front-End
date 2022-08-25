@@ -1,3 +1,28 @@
 * {
     margin: 0;
 }
+
+.container{
+    display: flex;
+
+    border: 1px solid black;
+
+    max-width: 350px;
+}
+
+.item{
+    background-color: orangered;
+
+    font-size: 24px;
+    text-align: center;
+
+    margin: 5px;
+}
+
+.sk-1{
+    flex-shrink: 1;
+}
+
+.fg-1{
+    flex-grow: 1;
+}
