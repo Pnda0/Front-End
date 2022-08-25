@@ -66,8 +66,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 10px;
+    padding: 10px; 
 }
+
 
 .campo-de-texto > input {
     width: 100%;
@@ -77,6 +78,16 @@ body {
     font-size: 11pt;
     font-family: Quicksand, sans-serif;
     box-sizing: border-box;
+}
+
+.campo-de-texto > input:invalid {
+    animation: shake 300ms;
+}
+
+@keyframes shake {
+    25% { transform: translate(4px)}
+    50% { transform: translate(-4px)}
+    75% { transform: translate(4px)}
 }
 
 .btn {
