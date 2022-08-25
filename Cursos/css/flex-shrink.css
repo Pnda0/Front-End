@@ -4,6 +4,7 @@
 
 .container{
     display: flex;
+    margin-bottom: 10px;
 
     border: 1px solid black;
 
@@ -19,8 +20,18 @@
     margin: 5px;
 }
 
+.s-0{
+    flex-shrink: 0;
+    flex-basis: 100px;
+}
+
+.s-2{
+    flex-shrink: 2;
+    flex-basis: 100px;
+}
+
 .sk-1{
-    flex-shrink: 1;
+    flex-shrink: 1s;
 }
 
 .fg-1{
