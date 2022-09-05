@@ -1,0 +1,47 @@
+* {
+    margin:0;
+}
+
+.container{
+    max-width: 350px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    display: flex;
+   
+}
+
+.item{
+    background-color: brown;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+
+.center{
+    align-self: center;
+}
+
+.flex-start{
+    align-self: flex-start;
+}
+
+.flex-end{
+    align-self: flex-end;
+}
+
+.baseline{
+    align-self: baseline;
+}
+
+.stretch{
+    align-self: stretch;
+}
+
+.auto{
+    align-self: auto;
+}
+
+.column{
+    flex-direction: column;
+}
