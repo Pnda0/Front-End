@@ -1,16 +1,12 @@
 <?php
+try{
+    $pdo = new PDO("pgsql:dbname=ad;host=localhost user=postgres password=admin port=5432");
+}
 
-    $Host = 'localhost';
-    $Username = 'postgres';
-    $Password = 'Andromeda#8352';
-    $port = '5432';
-    $dbnome = 'Login AD Promotora';
-
-   $conexao = pg_connect("host=localhost port=5432 dbname=Login AD Promotora user=postgres password=dark_souls");
-
-   if ($conexao)
-   {
-    echo "connected";
-   }
-
+catch (PDOException $e){
+    echo "erro com banco de dados".$e->getMessage();
+}
+catch (Exception $e){
+    echo "erro muito doido".$e->getMessage();
+}
 ?>
