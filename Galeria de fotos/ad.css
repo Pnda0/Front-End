@@ -78,10 +78,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    
 }
 
 .images .image-box{
     margin: 8px;
+    box-shadow: 2px 2px 2px;
 }
 
 .container .images .image-box{

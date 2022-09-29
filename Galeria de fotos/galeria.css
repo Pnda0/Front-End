@@ -53,6 +53,7 @@ body{
     color: #fff;
 
     padding: 0 15px 0 45px;
+    margin:  0 auto;
 }
 
 .search-box i{
@@ -66,7 +67,7 @@ body{
 
     transform: translateY(-50%);
 
-    font-size: 20px;
+    font-size: 35px;
 }
 
 /* === Imagens === */ 
@@ -85,8 +86,8 @@ body{
 
 .container .images .image-box{
     position: relative;
-    height: 300px;
-    width: 240px;
+    height: 190px;
+    width: 250px;
 
     border-radius: 6px;
 
@@ -110,7 +111,7 @@ body{
 
     color: #Fff;
 
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 400;
     text-transform: capitalize;
 }
