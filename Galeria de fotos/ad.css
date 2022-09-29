@@ -10,14 +10,14 @@
 }
 
 body{
-    background: linear-gradient(#181818, #0F3460,  #5CB8E4, #002B5B);
+    background: linear-gradient(#1073B3, #0F3460, #002B5B);
 }
 /* === Container === */ 
 
 .container{
     position: relative;
     min-height: 100vh;
-    max-width: 1000px;
+    max-width: 780px;
     width: 100%;
     margin:  0 auto;
     padding: 40px 20px;
@@ -30,7 +30,7 @@ body{
     height: 42px;
     max-width: 400px;
 
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 40px;
 
     display: flex;
@@ -67,6 +67,7 @@ body{
     transform: translateY(-50%);
 
     font-size: 20px;
+    margin: 0 auto;
 }
 
 /* === Imagens === */ 
@@ -85,8 +86,8 @@ body{
 
 .container .images .image-box{
     position: relative;
-    height: 300px;
-    width: 240px;
+    height: 150px;
+    width: 230px;
 
     border-radius: 6px;
 
