@@ -1,12 +1,17 @@
 <?php
-    $conexao = new PDO("pgsql:dbname=ad;host=localhost user=postgres password=admin port=5432");
+    $dbHost = 'Localhost';
+    $dbUsername = 'root';
+    $dbPassword = 'admin';
+    $dbName = 'formulario';
 
-    // catch (PDOException $e){
-    //    echo "erro com banco de dados".$e->getMessage();
-    //}
-    //catch (Exception $e){
-    //    echo "erro muito doido".$e->getMessage();
-    //}
+    $conexao = new mysqli($dbHost,$dbUsername, $dbPassword, $dbName);
 
-    
+    if($conexao->connect_errno)
+    {
+        echo "Erro";
+    }
+    else
+    {
+        echo "Conexão efetuada com sucesso";
+    }
 ?>
