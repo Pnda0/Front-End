@@ -10,7 +10,7 @@
 }
 
 body{
-    background: linear-gradient(#181818, #0F3460,  #5CB8E4, #002B5B);
+    background: linear-gradient(#402218, #865439,  #C68B59, #D7B19D);
 }
 /* === Container === */ 
 
@@ -37,6 +37,8 @@ body{
     display: flex;
     align-items: center;
     margin:  0 auto;
+
+    padding-bottom: 35px;
 }
 
 /* === Search Box === */ 
@@ -56,16 +58,18 @@ body{
 
     padding: 0 15px 0 45px;
     margin:  0 auto;
+
+    font-size: 20px;
     
 }
 
 .search-box i{
     position: absolute;
-    z-index: 5;
+    z-index: 3;
 
     color: #999;
 
-    top: 50%;
+    top: 9%;
     left: 6px;
 
     transform: translateY(-50%);

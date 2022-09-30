@@ -17,7 +17,7 @@ body{
 .container{
     position: relative;
     min-height: 100vh;
-    max-width: 780px;
+    max-width: 1000px;
     width: 100%;
     margin:  0 auto;
     padding: 40px 20px;
@@ -90,7 +90,7 @@ body{
 .container .images .image-box{
     position: relative;
     height: 150px;
-    width: 230px;
+    width: 300px;
 
     border-radius: 6px;
 

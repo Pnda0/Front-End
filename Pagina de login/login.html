@@ -1,3 +1,17 @@
+<?php
+
+    if(isse($_POST['submit']))
+    {
+        print_r($_POST['usuario'])
+        print_r($_POST['senha'])
+    }
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,21 +27,23 @@
     <div class="conteiner">
     <!-- left-login-->
          <!-- right-login-->
+         <form action="login." method="post">
         <div class="conteiner-1">
             <!-- card-login-->
             <div class="card-login"> 
                 <img  class="imagem" src="Imagens/foto1.png" alt="Ligação de tarefas" width="100%">
                 <!-- text-field -->
             <div class="campo-de-texto">
-                    <input type="text" pattern="[a-z]*" name="usuario" placeholder="Usuário">
+                    <input type="text" pattern="[a-z]*" name="usuario" placeholder="Usuário" required>
             </div>
             <div class="campo-de-texto">
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" name="senha" placeholder="Senha" required>
             </div>
-            <a target="_blank" class="btn botao-1" href="home.html">Entrar </a>
+            <a target="_self" class="btn botao-1" href="home.html">Entrar </a>
             <p class="rodape"> Conteúdo exclusivo para Colaboradores da AD Promotora.
                     Para maiores informações consulte o T.I da AD.
             </p>
+        </form>
              </div>
             </div>
                 
