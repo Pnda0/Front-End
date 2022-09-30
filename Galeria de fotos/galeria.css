@@ -33,8 +33,10 @@ body{
     margin: 0;
     margin-bottom: 40px;
 
+    
     display: flex;
     align-items: center;
+    margin:  0 auto;
 }
 
 /* === Search Box === */ 
@@ -54,20 +56,21 @@ body{
 
     padding: 0 15px 0 45px;
     margin:  0 auto;
+    
 }
 
 .search-box i{
     position: absolute;
-    z-index: 2;
+    z-index: 5;
 
     color: #999;
 
     top: 50%;
-    left: 15px;
+    left: 6px;
 
     transform: translateY(-50%);
 
-    font-size: 35px;
+    font-size: 30px;
 }
 
 /* === Imagens === */ 
@@ -103,6 +106,7 @@ body{
     transition: transform 0.2 linear;
 }
 
+/* === Título Imagens === */ 
 .container .images h6{
     position: absolute;
 
@@ -121,3 +125,7 @@ body{
 .image-box:hover img{
     transform: scale(1.05) ;
 }
+
+
+
+
