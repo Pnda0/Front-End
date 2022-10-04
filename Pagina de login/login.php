@@ -1,3 +1,19 @@
+<?php
+
+    if(isset($_POST['submit']))
+    {
+        print_r($_POST['usuario']);
+        print_r($_POST['senha']);
+    }
+
+
+
+
+
+
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,7 +42,7 @@
             <div class="campo-de-texto">
                     <input type="password" name="senha" placeholder="Senha" required>
             </div>
-            <a target="_self" class="btn botao-1" href="home.html">Entrar </a>
+            <a target="_self" class="btn botao-1" type="submit" name="submit" id="submit">Entrar </a>
             <p class="rodape"> Conteúdo exclusivo para Colaboradores da AD Promotora.
                     Para maiores informações consulte o T.I da AD.
             </p>
