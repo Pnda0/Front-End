@@ -13,7 +13,7 @@ body {
 .conteiner{
     /* VW corresponde a: Viewport width e Vh a: Viewport height. E Viewport a:Porcentagem de pixel da tela. EX: se sua tela tem 1000px 1 vh corresponde a 1%, logo 1vh = 10px */ 
     width: 100vw;
-    height: 96vh;
+    height: 664px;
     background-image: url("Imagens/foto2.png") ;
     display:flex;
     justify-content: center;
@@ -67,6 +67,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 10px; 
+    position: relative;
 }
 
 
@@ -79,6 +80,35 @@ body {
     font-family: Quicksand, sans-serif;
     box-sizing: border-box;
 }
+
+span{
+    position: absolute;
+    padding-left: 10px;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+    font-family: var(--fonte-apple);
+    transition: .4s;
+}
+
+input:focus{
+    border: none;
+    outline: 2px solid black;
+}
+
+input:focus + span,
+input:valid + span{
+    top: -8px;
+    left: 10px;
+    font-size: 10pt;
+    padding: 0 10px;
+}
+
+input:focus + span,
+input:valid + span:hover{
+    color: white;
+}
+
 
 .campo-de-texto > input:invalid {
     animation: shake 300ms;
@@ -124,7 +154,7 @@ body {
 .rodape{
     color: white;
     font-family: Quicksand, sans-serif;
-    font-size: 8pt;
+    font-size: 10pt;
 }
 
 .footer{
