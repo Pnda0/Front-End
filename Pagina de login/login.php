@@ -2,18 +2,19 @@
 
     if(isset($_POST['submit']))
     {
-        print_r($_POST['usuario']);
-        print_r($_POST['senha']);
+        //print_r('Nome:' . $_POST['usuario']);
+        //print_r('Senha:' . $_POST['senha']);
+
+        include_once('config.php');
+
+        $nome = $_POST['usuario'];
+        $senha = $_POST['senha'];
+
+        $result = mysqli_query($conexao, "INSERT INTO tb_usuarios(tb_usuario, tb_senhas)VALUES('$nome', '$senha')");
     }
-
-
-
-
-
-
+    
+    
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -30,7 +31,7 @@
     <div class="conteiner">
     <!-- left-login-->
          <!-- right-login-->
-         <form action="login.php" method="post">
+         <form action="testelogin.php" method="post">
         <div class="conteiner-1">
             <!-- card-login-->
             <div class="card-login"> 
@@ -42,7 +43,7 @@
             <div class="campo-de-texto">
                     <input type="password" name="senha" placeholder="Senha" required>
             </div>
-            <a target="_self" class="btn botao-1" type="submit" name="submit" id="submit">Entrar </a>
+            <button target="_self" class="btn botao-1" type="submit" name="submit" id="submit"> Entrar </button>
             <p class="rodape"> Conteúdo exclusivo para Colaboradores da AD Promotora.
                     Para maiores informações consulte o T.I da AD.
             </p>
