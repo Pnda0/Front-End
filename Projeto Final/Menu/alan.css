@@ -104,13 +104,13 @@ body.dark .menu-bar .mode i.moon{
 }
 
 .sidebar .image{
-    min-width: 60px;
+    min-width: 120px;
     display: flex;
     align-items: center;
 }
 
 .sidebar .image-text img{
-    width: 60px;
+    width: 120px;
     border-radius: 6px;
 }
 
@@ -341,3 +341,6 @@ header .image-text .header-text{
     border-radius: 50%;
 
 }
+
+/* === Galeria === */ 
+
