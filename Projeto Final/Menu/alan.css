@@ -94,7 +94,7 @@ body.dark .menu-bar .mode i.moon{
 .sidebar .text{
     font-size: 18px;
     font-weight: 500;
-    padding-left: 20px;
+    padding-left: 10px;
     color: var(--text-color);
 
     transition: var(--tran-04);
@@ -104,14 +104,13 @@ body.dark .menu-bar .mode i.moon{
 }
 
 .sidebar .image{
-    min-width: 120px;
+    min-width: 70px;
     display: flex;
     align-items: center;
 }
 
 .sidebar .image-text img{
-    width: 120px;
-    border-radius: 6px;
+    width: 60px;
 }
 
 /* ===== Sidebar Header ==== */
@@ -172,6 +171,7 @@ body.dark .menu-bar .mode i.moon{
 
 .sidebar li .icon,
 .sidebar li .text{
+    padding-left: 5px;
     transition: var(--tran-02);
 
     color: var(--text-color);
@@ -182,7 +182,6 @@ body.dark .menu-bar .mode i.moon{
     width: 100%;
     display: flex;
     align-items: center;
-
     text-decoration: none;
 
     border-radius: 6px;
@@ -251,18 +250,21 @@ header .image-text .header-text{
 .sidebar .search-box{
     border-radius: 6px;
     background-color: var(--primary-color-light);
-
 }
 
 .search-box input{
     height: 100%;
     width: 100%;
-
+    font-size: 13px;
     outline: none;
     border: none;
     border-radius: 6px;
-
     background-color: var(--primary-color-light);
+}
+
+
+body.dark .search-box input{
+    color: white;
 }
 
 /* =====  Menu  ==== */
@@ -312,6 +314,8 @@ header .image-text .header-text{
 
     border-radius: 6px;
 }
+
+
 
 .toggle-switch .switch{
     position: relative;
