@@ -94,7 +94,7 @@ body.dark .menu-bar .mode i.moon{
 .sidebar .text{
     font-size: 18px;
     font-weight: 500;
-
+    padding-left: 20px;
     color: var(--text-color);
 
     transition: var(--tran-04);
@@ -110,7 +110,7 @@ body.dark .menu-bar .mode i.moon{
 }
 
 .sidebar .image-text img{
-    width: 40px;
+    width: 60px;
     border-radius: 6px;
 }
 
@@ -244,8 +244,6 @@ header .image-text .header-text{
 .sidebar .search-box{
     border-radius: 6px;
     background-color: var(--primary-color-light);
-
-
 }
 
 .search-box input{
