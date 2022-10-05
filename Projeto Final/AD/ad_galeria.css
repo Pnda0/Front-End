@@ -1,0 +1,123 @@
+/* === Google font import - Poppins === */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body{
+   background-color: #1a5494;
+}
+/* === Container === */ 
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin:  0 auto;
+    padding: 40px 20px;
+    
+}
+
+.container .search-box{
+    position: relative;
+
+    height: 42px;
+    max-width: 400px;
+
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* === Search Box === */ 
+
+.search-box input{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    outline: none;
+    border: none;
+    border-radius: 6px;
+
+    background-color: #323334;
+    color: #fff;
+
+    padding: 0 15px 0 45px;
+}
+
+.search-box i{
+    position: absolute;
+    z-index: 2;
+
+    color: #999;
+
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+/* === Imagens === */ 
+
+.images{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images .image-box{
+    margin: 8px;
+    box-shadow: 3px 3px 3px;
+}
+
+.container .images .image-box{
+    position: relative;
+    height: 90px;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+}
+
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 6px;
+
+    transition: transform 0.2 linear;
+}
+
+.container .images h6{
+    position: absolute;
+
+    bottom: 10px;
+    left: 10px;
+
+    color: #Fff;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* === Hover === */ 
+
+.image-box:hover img{
+    transform: scale(1.05) ;
+}

@@ -1,0 +1,62 @@
+/*Resete Style */
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image: url(Imagens/foto3.png) ;
+}
+
+:root{
+    --cor-primaria: #F50057;
+    --cor-secundaria: #0C3C78;
+    --cor-terciaria: #fff;
+    --fonte-apple: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --cor-menu-apple: #424245;
+}
+
+
+/*Estilizinado Menu */
+
+#menu{
+    list-style: none;
+    padding: 0;
+    background-color: #fff;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+
+
+#menu ul li a{
+    color: var(--cor-secundaria);
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--fonte-apple);
+    transition: background .5s;
+}
+
+
+#menu ul li a:hover{
+    background-color: #0C3C78;
+    color: #fff;
+}
+
+
+
+
