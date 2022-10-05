@@ -198,6 +198,13 @@ body.dark .menu-bar .mode i.moon{
     transition: var(--tran-04);
 }
 
+.bottom-content li a:hover{
+    background-color: #F50057;
+    transition: var(--tran-04);
+}
+
+
+
 /* ===== Sidebar Menu ==== */
 
 .sidebar .menu-bar{
@@ -244,6 +251,7 @@ header .image-text .header-text{
 .sidebar .search-box{
     border-radius: 6px;
     background-color: var(--primary-color-light);
+
 }
 
 .search-box input{
@@ -284,6 +292,7 @@ header .image-text .header-text{
 .menu-bar .mode i.sun{
     opacity: 0;
 }
+
 
 
 /* =====  Toggle Moon/Sun  ==== */
