@@ -78,18 +78,16 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    
 }
 
 .images .image-box{
     margin: 8px;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 3px 3px 3px;
 }
 
 .container .images .image-box{
     position: relative;
-    height: 100px;
+    height: 90px;
 
     border-radius: 6px;
 
