@@ -262,10 +262,13 @@ header .image-text .header-text{
     outline: none;
     border: none;
     border-radius: 6px;
-
+    
     background-color: var(--primary-color-light);
 }
 
+body.dark .search-box input{ 
+    color: white;
+}
 /* =====  Menu  ==== */
 
 .menu-bar .mode{
