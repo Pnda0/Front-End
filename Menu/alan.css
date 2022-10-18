@@ -129,7 +129,7 @@ body.dark .menu-bar .mode i.moon{
     position: absolute;
 
     top: 50%;
-    right: -25px;
+    right: -30px;
     transform: translateY(-50%) rotate(180deg);
     
 
@@ -240,11 +240,12 @@ header .image-text .header-text{
 }
 
 .header-text .name{
-    font-weight:600 ;
+    font-weight:500 ;
 }
 
 .header-text .profession{
-    font-weight:600 ;
+    font-weight: 400;
+    margin-top: -1px;
 }
 
 /* ===== Search Box ==== */
