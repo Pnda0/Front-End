@@ -1,5 +1,6 @@
 /* ===== Presets ==== */
-
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
 /* ===== Body & BodyDark ==== */
 body{
     height: 100vh;
-    font-family: var(--fonte-apple);
+    font-family: 'Poppins', sans-serif;
     background-color: var(--body-color);
 
     transition: var(--tran-02);
@@ -283,7 +284,7 @@ header .image-text .header-text{
 
 .menu-bar .mode .moon-sun{
     height: 50px;
-    width: 60px;
+    width: 40px;
 
     display: flex;
     align-items: center;
