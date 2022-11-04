@@ -1,5 +1,6 @@
 /* ===== Presets ==== */
-
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
 /* ===== Body & BodyDark ==== */
 body{
     height: 100vh;
-    font-family: var(--fonte-apple);
+    font-family: 'Poppins', sans-serif;
     background-color: var(--body-color);
 
     transition: var(--tran-02);
@@ -128,7 +129,7 @@ body.dark .menu-bar .mode i.moon{
     position: absolute;
 
     top: 50%;
-    right: -25px;
+    right: -30px;
     transform: translateY(-50%) rotate(180deg);
     
 
@@ -239,11 +240,12 @@ header .image-text .header-text{
 }
 
 .header-text .name{
-    font-weight:600 ;
+    font-weight:500 ;
 }
 
 .header-text .profession{
-    font-weight:600 ;
+    font-weight: 400;
+    margin-top: -1px;
 }
 
 /* ===== Search Box ==== */
@@ -261,10 +263,13 @@ header .image-text .header-text{
     outline: none;
     border: none;
     border-radius: 6px;
-
+    
     background-color: var(--primary-color-light);
 }
 
+body.dark .search-box input{ 
+    color: white;
+}
 /* =====  Menu  ==== */
 
 .menu-bar .mode{
@@ -283,7 +288,7 @@ header .image-text .header-text{
 
 .menu-bar .mode .moon-sun{
     height: 50px;
-    width: 60px;
+    width: 40px;
 
     display: flex;
     align-items: center;
