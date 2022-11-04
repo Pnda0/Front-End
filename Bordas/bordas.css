@@ -39,7 +39,6 @@ body{
 
   .style{
     border: none;
-
     background-color: #B2B2B2;
   }
 
@@ -49,7 +48,7 @@ body{
   }
 
   .item2{
-    border: solid var(--cor-primaria) 6px;
+    border: solid #CF0A0A 6px;
     padding-top: 40px;
   }
 
