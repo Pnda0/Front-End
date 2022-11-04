@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+}
+
+:root{
+    --cor-primaria: #F50057;
+    --cor-secundaria: #0C3C78;
+    --cor-terciaria: #fff;
+    --fonte-apple: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+body{
+    font-family: var(--fonte-apple);
+    font-weight: 100%;
+    box-sizing: border-box;
+}
+
+.titulo{
+    margin: 70px;
+    font-size: 45px;
+}
+
+
+
+.container{
+    width: 700px;
+    height: 400px;
+  
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  
+    margin: 10%;
+    font-size: 35px;
+    text-align: center;
+    
+  }
+
+  .style{
+    border: none;
+
+    background-color: #B2B2B2;
+  }
+
+  .item1{
+    border: none #222831 6px;
+    padding-top: 40px;
+  }
+
+  .item2{
+    border: solid var(--cor-primaria) 6px;
+    padding-top: 40px;
+  }
+
+  .item3{
+    border: dashed #CF0A0A 6px;
+    padding-top: 40px;
+  }
+
+  .item4{
+    border: double #CF0A0A 6px;
+    padding-top: 40px;
+  }
+
+  .item5{
+    border: dotted #CF0A0A 6px;
+    padding-top: 40px;
+  }
+
+  .item6{
+    border: groove #CF0A0A 6px;
+    padding-top: 40px;
+  }
+
+  .item7{
+    border: inset #CF0A0A 6px;
+    padding-top: 40px;
+  }
+
+  .item8{
+    border: outset #CF0A0A 6px;
+    padding-top: 40px;
+  }
+
+  .item9{
+    border: ridge #CF0A0A 8px;
+    padding-top: 40px;
+  }
+
+
