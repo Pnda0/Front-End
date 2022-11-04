@@ -24,52 +24,6 @@ body{
     
 }
 
-.container .search-box{
-    position: relative;
-
-    height: 42px;
-    max-width: 400px;
-
-    margin: 0 auto;
-    margin-bottom: 40px;
-
-    display: flex;
-    align-items: center;
-}
-
-/* === Search Box === */ 
-
-.search-box input{
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-
-    outline: none;
-    border: none;
-    border-radius: 6px;
-
-    background-color: #323334;
-    color: #fff;
-
-    padding: 0 15px 0 45px;
-}
-
-.search-box i{
-    position: absolute;
-    z-index: 2;
-
-    color: #999;
-
-    top: 50%;
-    left: 15px;
-
-    transform: translateY(-50%);
-
-    font-size: 20px;
-    margin: 0 auto;
-}
-
 /* === Imagens === */ 
 
 .images{
