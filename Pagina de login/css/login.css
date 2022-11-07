@@ -13,8 +13,8 @@ body {
 .conteiner{
     /* VW corresponde a: Viewport width e Vh a: Viewport height. E Viewport a:Porcentagem de pixel da tela. EX: se sua tela tem 1000px 1 vh corresponde a 1%, logo 1vh = 10px */ 
     width: 100vw;
-    height: 664px;
-    background-image: url("Imagens/foto2.png") ;
+    height: 96vh;
+    background-image: url("foto2.png") ;
     display:flex;
     justify-content: center;
     align-items: center;

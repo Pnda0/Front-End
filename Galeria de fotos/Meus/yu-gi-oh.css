@@ -1,0 +1,64 @@
+@import url('https://fonts.cdnfonts.com/css/squealer');
+
+
+body{
+    height: 100vh;
+    background-color: #0a0a2a;
+
+    font-family: 'Squealer', sans-serif; font-family: 'Squealer Embossed', sans-serif;
+}
+
+.titulo{
+    color: #B7CADB;
+    font-size: 55px;
+    padding-left: 800px;
+}
+
+.container{
+    height: 400px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25%;
+}
+
+.card{
+    perspective: 1000px;
+    height: 220px;
+    width: 300px;
+
+    position: relative;
+    margin: 30px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card .back{
+    position: absolute;
+    transform: rotateY(0deg);
+
+    backface-visibility: hidden;
+    transition: transform 0.4s linear;
+}
+
+.card .front{
+    position: absolute;
+    transform: rotateY(100deg);
+
+    backface-visibility: hidden;
+    transition: transform 0.4s linear;
+}
+
+.card:hover .back{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.card:hover .front{
+    transform: rotateY(8deg);
+    cursor: pointer;
+}
