@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de caixa de resposta HTML</title>
+</head>
+<body>
+
+	<label for="pergunta">Qual é o dia de hoje?</label>
+	<input type="text" id="pergunta" name="pergunta">
+
+	<button onclick="mostrarResposta()">Mostrar resposta</button>
+
+	<br><br>
+
+	<label for="resposta">Resposta:</label>
+	<textarea id="resposta" name="resposta" rows="4" cols="50" disabled></textarea>
+
+	<script>
+		function mostrarResposta() {
+			var hoje = new Date();
+			var diaSemana = hoje.toLocaleString('pt-BR', { weekday: 'long' });
+			document.getElementById("resposta").value = diaSemana;
+		}
+	</script>
+
+</body>
+</html>
