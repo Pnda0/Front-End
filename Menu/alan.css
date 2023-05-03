@@ -13,7 +13,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--body-color);
 
-    transition: var(--tran-02);
+    transition: var(--tran-05);
 }
 
 body.dark {
@@ -41,6 +41,10 @@ body.dark .sidebar li a:hover .text{
 body.dark .sidebar.close header .toggle{
     transform: rotate(180deg);
     color: var(--text-color);
+}
+
+.sidebar.close header .toggle{
+    transform: rotate(180deg );
 }
 
 body.dark .menu-bar .mode i.sun{
@@ -89,6 +93,7 @@ body.dark .menu-bar .mode i.moon{
     background-color: var(--sidebar-color);
 
     transition: var(--tran-05);
+    z-index: 100;
 }
 
 
@@ -104,10 +109,16 @@ body.dark .menu-bar .mode i.moon{
     opacity: 1;
 }
 
+.sidebar .menu{
+    margin-top: 35px;
+}
 .sidebar .image{
     min-width: 60px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
+    justify-content: center;
 }
 
 .sidebar .image-text img{
@@ -209,7 +220,7 @@ body.dark .menu-bar .mode i.moon{
 /* ===== Sidebar Menu ==== */
 
 .sidebar .menu-bar{
-    height: calc(100% - 50px);
+    height: calc(100% - 80px);
 
     display: flex;
     flex-direction: column;
@@ -231,6 +242,18 @@ body.dark .menu-bar .mode i.moon{
     opacity: 0;
 }
 
+body.dark .sidebar.close{
+    width: 88px;
+}
+
+body.dark .sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+
+body.dark .sidebar.close .text{
+    opacity: 0;
+}
+
 
 /* ===== Header ==== */
 
@@ -240,7 +263,7 @@ header .image-text .header-text{
 }
 
 .header-text .name{
-    font-weight:500 ;
+    font-weight:500;
 }
 
 .header-text .profession{
@@ -248,11 +271,18 @@ header .image-text .header-text{
     margin-top: -1px;
 }
 
+a {
+    text-decoration: none;
+    border: none;
+  }
+
+  
 /* ===== Search Box ==== */
 
 .sidebar .search-box{
     border-radius: 6px;
     background-color: var(--primary-color-light);
+    transition: var(--tran-05);
 
 }
 
@@ -265,6 +295,9 @@ header .image-text .header-text{
     border-radius: 6px;
     
     background-color: var(--primary-color-light);
+
+    font-size: 15px;
+    font-weight: 400;
 }
 
 body.dark .search-box input{ 
@@ -346,3 +379,27 @@ body.dark .search-box input{
     border-radius: 50%;
 
 }
+
+/* ===== HOME  ==== */
+
+.home {
+    height:100vh ;
+    width: calc(100% - 250px);
+    left: 250px;
+    background-color: red;
+    position: relative;
+    transition: var(--tran-05);
+}
+
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+.sidebar.close ~ .home{
+    width: calc(100% - 88px);
+    left: 88px;
+}
+

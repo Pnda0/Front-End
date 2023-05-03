@@ -1,20 +1,3 @@
-<?php
-
-    if(isset($_POST['submit']))
-    {
-        //print_r('Nome:' . $_POST['usuario']);
-        //print_r('Senha:' . $_POST['senha']);
-
-        include_once('config.php');
-
-        $nome = $_POST['usuario'];
-        $senha = $_POST['senha'];
-
-        $result = mysqli_query($conexao, "INSERT INTO tb_usuarios(tb_usuario, tb_senhas)VALUES('$nome', '$senha')");
-    }
-    
-    
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,8 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="login.css">
     <link rel="icon" href="https://www.adpromotora.com.br/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/Pagina de login/css/login.css">
-<title> Automação AD </title>
+    <link rel="stylesheet" type="text/css" href="/Front-End/Pagina de login/css/login.css">
+<title> Login Automação AD </title>
 
 <body>
     <!-- main login -->
@@ -34,7 +17,7 @@
         <div class="conteiner-1">
             <!-- card-login-->
             <div class="card-login"> 
-                <img  class="imagem" src="/Pagina de login/Imagens/foto1.png" alt="Ligação de tarefas" width="100%">
+                <img  class="imagem" src="/Front-End/Pagina de login/Imagens/foto1.png" alt="Ligação de tarefas" width="100%">
                 <!-- text-field -->
             <div class="campo-de-texto">
                     <input type="text" pattern="[a-z]*" name="usuario" required>
@@ -46,7 +29,7 @@
             </div>
             <button target="_self" class="btn botao-1" type="submit" name="submit" id="submit"> Entrar </button>
             <p class="rodape"> Conteúdo exclusivo para Colaboradores da AD Promotora.
-                    Para maiores informações consulte o T.I da AD.
+                    Para maiores informações consulte o T.I.
             </p>
         </form>
              </div>
